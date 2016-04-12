@@ -20,6 +20,7 @@ Grab [archive][1], unpack it and change DotOPDS config file:
 ## License
 
 [MIT](LICENSE)
+
 Content in `vendor` folder under different licenses.
 
-[1]: archive/master.zip
+[1]: https://github.com/DeniSix/DotOPDS-web/archive/master.zip
