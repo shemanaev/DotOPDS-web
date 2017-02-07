@@ -361,7 +361,7 @@ function doSearch() {
   var q = decodeURIComponent(query)
 
   NProgress.start()
-  $.getJSON('/opds/search', {q: q, page: page})
+  $.getJSON('/opds/search', {everywhere: q, page: page})
     .done(searchDone)
     .always(NProgress.done)
 }
