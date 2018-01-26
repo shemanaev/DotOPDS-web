@@ -73,10 +73,8 @@
 
   <script id="entry-template" type="text/x-handlebars-template">
     <div class="book" itemscope itemtype="http://schema.org/Book">
-      {{#if cover}}
-      <img itemprop="cover" class="book-details--cover" src="{{cover}}"/>
-      {{/if}}
-      <div class="book-details {{#if cover}}book-details-img{{/if}}">
+      <img itemprop="cover" class="book-details--cover" src="{{#if cover}}{{cover}}{{else}}data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs={{/if}}"/>
+      <div class="book-details book-details-img">
         <h1 itemprop="name" class="book-details--title">{{title}}</h1>
 
       {{#if authors.length}}
